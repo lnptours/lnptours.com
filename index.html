@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LNP TOURS Sri Lanka</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Additional styles for places page */
+    .places-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .place {
+      margin: 20px;
+      text-align: center;
+    }
+
+    .place img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <!-- Title content goes here -->
+    <h1>LNP TOURS </br>Sri Lanka</h1>
+    <p>Welcome to the vibrant world of Sri Lanka's breathtaking beauty and rich cultural heritage.</p>
+  </div>
+  
+  <div class="slots-container">
+    <!-- Places Slot Button -->
+    <div class="slot-button">
+      <a href="#places-section" onclick="scrollToSection('#places-section')">Places</a>
+    </div>
+    
+    <!-- Pin Your Way on Google Maps Slot Button -->
+    <div class="slot-button">
+      <a href="#maps-section" onclick="scrollToSection('#maps-section')">Pin your way on Google Maps</a>
+    </div>
+    
+    <!-- Book It Slot Button -->
+    <div class="slot-button">
+      <a href="#book-section" onclick="scrollToSection('#book-section')">Book it</a>
+    </div>
+  </div>
+
+  <section id="places-section" class="section">
+  
+  </section>
+  
+  <section id="maps-section" class="section">
+    <!-- Google Maps content goes here -->
+  </section>
+  
+  <section id="book-section" class="section">
+    <!-- Book It content goes here -->
+  </section>
+
+  <script>
+    function scrollToSection(sectionId) {
+      const section = document.querySelector(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  </script>
+</body>
+</html>
