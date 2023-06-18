@@ -1,0 +1,132 @@
+/* styles.css */
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: 36px;
+}
+
+/* Slots styles */
+.slots {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.slot {
+  flex-basis: 30%;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 24px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}/* styles.css */
+
+/* Rest of the styles */
+
+/* Title styles */
+.title {
+  background-image: url('sigiriya.jpg'); /* Replace 'sigiriya.jpg' with your actual image file path */
+  background-size: cover;
+  background-position: center;
+  animation: backgroundAnimation 20s infinite;
+  height: 300px; /* Adjust the height value as per your preference */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.title h1 {
+  font-size: 48px; /* Increase the font size as desired */
+  color: white;
+}
+
+.title p {
+  font-size: 24px; /* Increase the font size as desired */
+  color: lightblue; /* Set the color to light blue or any other desired color */
+}
+
+.slots-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add some margin to separate the buttons from the title */
+}
+
+.slot-button {
+  flex: 1; /* Distribute the available space evenly among the slot buttons */
+  max-width: 200px; /* Set a maximum width for the slot buttons */
+  height: 200px; /* Adjust the height as needed */
+  background-color: #db7093; /* Set the background color to your desired color */
+  border-radius: 10px; /* Add rounded corners for a box-like appearance */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.slot-button a {
+  text-decoration: none;
+  color: #ffffff; /* Set the text color to white or any other desired color */
+  font-size: 20px; /* Adjust the font size as needed */
+  font-weight: bold;
+  text-align: center; /* Center the text horizontally */
+  font-family: 'Engravers MT', cursive; /* Set the font family to 'Engravers MT' */
+}
+
+.slot-button:hover {
+  background-color: #e9967a; /* Set a different background color when hovering */
+}
+
+
+
+
+@keyframes backgroundAnimation {
+  0% {
+    background-image: url('sigiriya.jpg');
+  }
+  20% {
+    background-image: url('nine_arch_bridge.jpg');
+  }
+  40% {
+    background-image: url('nilawali_beach.jpg');
+  }
+  60% {
+    background-image: url('ruwanwali_temple.jpg');
+  }
+  80% {
+    background-image: url('yala_park.jpg');
+  }
+  100% {
+    background-image: url('galle_fort.jpg');
+  }
+}
+
+
+</section>
